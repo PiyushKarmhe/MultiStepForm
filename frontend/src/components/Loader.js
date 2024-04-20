@@ -5,10 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 const Loader = () => {
   const navigate = useNavigate();
-
-  useEffect(()=>{
-    setTimeout(()=>navigate("/result"),3000);
-  },[]);
+  setTimeout(()=>navigate("/result"),3000);
 
   return (
     <div className="fixed z-10 top-0 left-0 w-screen h-screen flex flex-col gap-8 items-center justify-center justify-items-center place-content-center bg-white">

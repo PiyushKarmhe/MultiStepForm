@@ -4,10 +4,7 @@ import { useDispatch } from "react-redux";
 
 const YourWay = () => {
   const dispatch = useDispatch();
-
-  useEffect(()=>{
-    dispatch(setContinueState({ allow: true }));
-  },[]);
+  dispatch(setContinueState({ allow: true }));
   
   return (
     <div className="flex flex-col md:flex-row gap-2 md:gap-5 lg:gap-4 items-center justify-center w-full px-2 md:my-4 lg:my-4 lg:mt-20">
